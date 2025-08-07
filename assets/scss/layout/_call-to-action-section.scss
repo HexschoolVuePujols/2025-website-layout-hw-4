@@ -1,0 +1,52 @@
+.call-to-action-section {
+    padding-top: 48px;
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        background-color: #E8FEC5;
+        padding: 24px 0;
+
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .call-to-action-section {
+        padding-top: 24px;
+        header {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.bg-black-white-text-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background-color: #212529;
+    border-radius: 4px;
+    padding: 12px 24px;
+
+    &:hover {
+        background-color: #515b65;
+    }
+
+    &:visited {
+        color: #FFFFFF;
+    }
+}
+@media (max-width: 767px) {
+    .bg-black-white-text-btn {
+        padding: 8px 16px;
+    }
+}

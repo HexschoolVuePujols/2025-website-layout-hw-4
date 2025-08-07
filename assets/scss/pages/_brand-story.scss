@@ -1,0 +1,182 @@
+.brand-story__header {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Center the image */
+    height: 400px;
+    background-size: cover;
+    padding-top: 151px;
+    padding-bottom: 151px;
+    margin-bottom: 64px;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+
+.brand-story__container {
+    margin: 0 auto;
+}
+
+.brand-story__section {
+    max-width: 856px;
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid #DEE2E6;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #212529;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-story__section {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+
+.brand-story__summary-section {
+    padding: 32px;
+    background-color: #F5FEE7;
+    text-align: center;
+    border-bottom: none;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #57A203;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        margin-bottom: 4px;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-story__summary-section {
+        text-align: left;
+    }
+}
+
+
+.brand-story__photo-section {
+    max-width: 1076px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+    .brand-story__photo-section {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+/* 品牌簡介 */
+.brand-story__intro-section {
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #57A203;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 767px) {}
+
+
+/* 品牌歷程 */
+.brand-story__journey-section {
+    li {
+        list-style-type: disc;
+        margin-left: 27px;
+        margin-bottom: 12px;
+    }
+
+    li:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    li span {
+        padding-left: 8px;
+        margin-left: 8px;
+        border-left: 1px solid #212529;
+    }
+
+}
+
+/* 品牌理念 */
+.brand-story__concept-section {
+    li {
+        padding-left: 12px;
+        border-left: 3px solid #DEE2E6;
+        margin-bottom: 12px;
+    }
+
+    li:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+/* 品牌小故事 */
+.brand-story__story-section {
+    li {
+        color: #57A203;
+        margin-bottom: 16px;
+    }
+
+    li:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    li span {
+        border-bottom: 1px solid #57A203;
+        margin-left: 8px;
+    }
+}
+.brand-story {
+    .call-to-action-section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,487 @@
+.index {
+  .header-nav {
+    padding-bottom: 0;
+  }
+  .nav-rwd {
+    .nav-list__item {
+      color: #212529;
+    }
+  }
+}
+
+.banner {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 200px;
+  padding-top: 289px;
+  padding-bottom: 288px;
+
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+  }
+
+  .buy-now-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212529;
+    padding: 12px 24px;
+    background-color: #C0FA73;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: darken($color: #C0FA73, $amount: 20%);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding-top: 155px;
+    padding-bottom: 155px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    h2 {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+
+  }
+}
+
+
+/* 新品上市 */
+.new-arrivals-section {
+  // padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: calc(64px - 40px);
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #212529;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #212529;
+    margin-bottom: 32px;
+  }
+
+  .new-list {
+    .new-list__item {
+      img {
+        margin-bottom: 12px;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+
+    .col-6 {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .new-arrivals-section {
+    padding-top: 40px;
+    padding-bottom: 16px;
+
+    .new-list {
+      .col-6 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+
+
+/* 熱銷補貨 */
+.hot-sale-section {
+  padding: 64px 0;
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .hot-product {
+    position: relative;
+
+    .hot-flag {
+      font-size: 14px;
+      font-weight: 500;
+      color: #57A203;
+      background-color: #F5FEE7;
+      position: absolute;
+      padding: 8px 12px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hot-sale-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    ul {
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+
+      li.col-3 {
+        flex: 0 0 auto;
+        width: 300px;
+      }
+
+      .hot-product {}
+    }
+  }
+}
+
+
+/* 跨界聯名 */
+.crossover-section {
+  padding: 48px 0;
+
+  header {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // padding: 100px 0;
+    padding-top: 100px;
+    // margin: 100px auto;
+  }
+
+  .crossover-container {
+    max-width: 634px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    h2 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+
+      span {
+        font-size: 40px;
+        // font-weight: 700;
+        // line-height: 1.2;
+        color: #C0FA73;
+      }
+    }
+
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      color: #ADB5BD;
+      margin-bottom: 48px;
+    }
+
+    p.rwd {
+      display: none;
+    }
+
+    .green-rounded-btn {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: #C0FA73;
+      padding: 12px 24px;
+      border-radius: 4px;
+      margin: 0 auto;
+      margin-bottom: 84px;
+      color: #212529;
+
+      &:hover {
+        background-color: darken($color: #C0FA73, $amount: 20%);
+      }
+    }
+
+    .star {
+      position: absolute;
+      left: -80px;
+      top: -24px;
+    }
+
+    .sparkle {
+      position: absolute;
+      right: -48px;
+      top: 150px;
+    }
+  }
+}
+
+.crossover-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.crossover-indicator__item {
+  background-color: #CED4DA;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  &.active {
+    background-color: #6C757D;
+    width: 24px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .crossover-section {
+    padding: 24px 0;
+
+    header {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true");
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 64px;
+    }
+
+    .crossover-container {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 32px;
+
+        span {
+          font-size: 28px;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      p.rwd {
+        display: block;
+        margin-bottom: 4px;
+
+        &:nth-last-child(2) {
+          margin-bottom: 32px;
+        }
+      }
+
+      p.no-rwd {
+        display: none;
+      }
+
+      .star {
+        position: absolute;
+        left: -28px;
+        top: -36px;
+      }
+
+      .sparkle {
+        position: absolute;
+        right: 0;
+        top: 204px;
+      }
+    }
+  }
+
+  .crossover-indicator {
+    display: none;
+  }
+}
+
+
+
+/* 依系列選購 */
+.series-section {
+  padding: 64px 0;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .overlay-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../../assets/images/product-12.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 118px;
+    padding-bottom: 117px;
+    text-align: center;
+
+    h3 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #FFFFFF;
+
+    }
+  }
+
+  .col-3:nth-child(2) .overlay-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../../assets/images/product-11.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .col-3:nth-child(3) .overlay-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../../../assets/images/product-13.png");
+  }
+
+  .col-3:nth-child(4) .overlay-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/product-10.png?raw=true");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .series-section {
+    padding: 40px 0;
+
+    .col-3 {
+      width: 50%;
+      margin-bottom: 12px;
+      &:nth-child(odd) {
+        padding-right: 0;
+        padding-right: 6px;
+      }
+  
+      &:nth-child(even) {
+        padding-left: 0;
+        padding-left: 6px;
+      }
+
+      .overlay-card {
+        padding-top: 62.5px;
+        padding-bottom: 61px;
+        h3 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+}
+
+/* 穿搭靈感 */
+.sample-section {
+  // padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 80px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-bottom: -16px;
+  }
+
+  [class*=col-] {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 8px;
+    outline: 1px solid #000;
+    outline: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sample-section {
+    padding: 40px 0;
+    .row {
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+    }
+    [class*=col-] {
+      flex: 0 0 auto;
+      width: 300px;
+    }
+  }
+}
