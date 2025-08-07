@@ -1,11 +1,18 @@
 .index {
-  .header-nav {
-    padding-bottom: 0;
-  }
+  // .header-nav {
+  //   padding-bottom: 0;
+  // }
   .nav-rwd {
     .nav-list__item {
       color: #212529;
     }
+  }
+}
+@media (max-width: 767px) {
+  .index {
+  .header-nav {
+    padding-bottom: 0;
+  }
   }
 }
 
@@ -366,7 +373,7 @@
 
   .overlay-card {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../../assets/images/product-12.png");
+      url("../images/product-12.png");
     background-size: cover;
     background-position: center;
     padding-top: 118px;
@@ -392,14 +399,16 @@
 
   .col-3:nth-child(2) .overlay-card {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../../assets/images/product-11.png");
+      url("../images/product-11.png");
     background-size: cover;
     background-position: center;
   }
 
   .col-3:nth-child(3) .overlay-card {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../../assets/images/product-13.png");
+      url("../assets/images/product-13.png");
+    background-size: cover;
+    background-position: center;
   }
 
   .col-3:nth-child(4) .overlay-card {

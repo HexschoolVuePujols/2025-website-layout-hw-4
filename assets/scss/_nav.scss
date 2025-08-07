@@ -61,20 +61,22 @@
 }
 
 @media (max-width: 767px) {
-    .nav-rwd {
-        display: block;
-        .nav-list {
-            display: flex;
-            li {
-                width: 50%;
-            }
-            .nav-list__item {
-                background-color: #F5FEE7;
-                width: 100%;
-                display: block;
-                padding: 12px 0;
-                &.active {
-                    background-color: #E8FEC5;
+    .index {
+        .nav-rwd {
+            display: block;
+            .nav-list {
+                display: flex;
+                li {
+                    width: 50%;
+                }
+                .nav-list__item {
+                    background-color: #F5FEE7;
+                    width: 100%;
+                    display: block;
+                    padding: 12px 0;
+                    &.active {
+                        background-color: #E8FEC5;
+                    }
                 }
             }
         }
